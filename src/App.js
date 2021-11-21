@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Route, Routes, Switch } from "react-router";
+import { Route } from "react-router";
+import { Switch } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import Library from "./components/libraryComponent";
 import Navbar from "./components/navComponent";
@@ -11,10 +12,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Library />} />
-          <Route exact path="/ghibli-movie" element={<MovieDisplay />} />
-        </Routes>
+        <Switch>
+          <Route exact path="/" render={() => <Library />} />
+          <Route exact path="/ghibli-movie" component={MovieDisplay} />
+        </Switch>
       </BrowserRouter>
     </div>
   );
