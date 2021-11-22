@@ -1,0 +1,11 @@
+
+.imgTiles {
+  width: 15rem;
+  padding: 0.4em 0.4em;
+}
+
+.imgTiles:hover {
+  border-radius: 2%;
+  box-shadow: 0 0.1875rem 0.625rem;
+  transition: 0.8s;
+}

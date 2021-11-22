@@ -1,11 +1,10 @@
 import logo from "./logo.svg";
-import "./App.css";
-import { Route } from "react-router";
-import { Switch } from "react-router";
+import "../src/styles.css/App.css";
+import { Route, Switch } from "react-router";
 import { BrowserRouter } from "react-router-dom";
-import Library from "./components/libraryComponent";
 import Navbar from "./components/navComponent";
 import MovieDisplay from "./components/movieDisplayComponent";
+import MovieList from "./components/movieListComponent";
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route exact path="/" render={() => <Library />} />
+          <Route exact path="/" render={() => <MovieList />} />
           <Route exact path="/ghibli-movie" component={MovieDisplay} />
         </Switch>
       </BrowserRouter>

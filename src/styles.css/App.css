@@ -1,19 +1,8 @@
 :root {
-  --text-color: #EBE9E7;
-  --nav-color: #3952C9;
-  --secondary-color: #B2B0AE;
-  --accent-color: #233AB5;
-}
-
-
-img {
-  width: 15rem;
-  padding: 0.4em 0.4em;
-}
-
-img:hover {
-  border-radius: 2%;
-  box-shadow: 0 0.1875rem 0.625rem;
+  --text-color: #ebe9e7;
+  --nav-color: #3952c9;
+  --secondary-color: #b2b0ae;
+  --accent-color: #233ab5;
 }
 
 .navbar {
@@ -25,15 +14,12 @@ img:hover {
 .navContainer {
   max-width: 82rem;
   margin: 0 auto;
-  overflow: none;
   padding: 0 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 
 .logo {
   white-space: nowrap;
 }
-

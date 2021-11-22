@@ -1,0 +1,11 @@
+.movieList {
+  max-width: 82rem;
+  margin: 0 auto;
+  overflow: none;
+  padding: 0 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #aaa; */
+}
