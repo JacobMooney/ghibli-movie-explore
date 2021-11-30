@@ -9,7 +9,7 @@ class Library extends Component {
       data: [],
     };
   }
-  //Grab movies from API
+  //Grab movies from API 
   componentDidMount() {
     fetch(" https://ghibliapi.herokuapp.com/films/")
       .then((res) => res.json())
@@ -29,7 +29,7 @@ class Library extends Component {
           }}
           key={movies.id}
         >
-          <img className="imgTiles" src={movie.image} />
+          <img alt={movie.title} className="imgTiles" src={movie.image} />
         </Link>
       </div>
     ));

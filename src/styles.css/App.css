@@ -1,5 +1,5 @@
 :root {
-  --text-color: #ebe9e7;
+  --text-color: white;
   --nav-color: #3952c9;
   --secondary-color: #b2b0ae;
   --accent-color: #233ab5;
@@ -21,5 +21,6 @@
 }
 
 .logo {
+  color: var(--text-color);
   white-space: nowrap;
 }
