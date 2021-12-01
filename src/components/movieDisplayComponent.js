@@ -1,10 +1,8 @@
 import React from "react";
 import "../styles.css/MovieAbout.css";
-import StarRatings from "react-star-ratings";
 
 function MovieDisplay(props) {
   const movie = props.location.state.movieInfo;
-  const movieScore = movie.rt_score;
   console.log(movie);
   return (
     <React.Fragment>
