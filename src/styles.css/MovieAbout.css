@@ -1,5 +1,5 @@
 .container {
-  max-width: 82rem;
+  max-width: 86rem;
   margin: 0 auto;
   overflow: none;
   padding: 0 2.5rem;
@@ -20,41 +20,38 @@
 .aboutImg {
   max-width: 100%;
   width: 100%;
-  border-radius: 5px;
-  margin: 0 auto;
-  transition: 0.5s;
+  border-radius: 4%;
 }
 
 .previewImg {
   max-width: 100%;
+  height: auto;
   width: 70rem;
   padding: 0 2em;
-  border-radius: 10%;
+  border-radius: 7%;
+  object-fit: contain;
 }
 
 .flexDisplay {
   display: flex;
   flex-direction: column;
-}
-
-section:nth-of-type(2) > p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #1a1a1a;
+  padding-top: 3em;
+  background-color: #f2f2f2;
+  padding: 1em 0.625rem;
 }
 
 .flexDisplay > section {
+  line-height: 1.3em;
   font-size: 1.4rem;
   font-weight: 400;
   color: #1a1a1a;
 }
 
+section:nth-of-type(2) > p {
+  font-size: 1.2rem;
+}
+
 .titles {
   padding: 0 0.625rem;
   background-color: #f2f2f2;
-}
-
-.container > .flexDisplay {
-  background-color: #f2f2f2;
-  padding: 0 0.625rem;
 }

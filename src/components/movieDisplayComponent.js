@@ -15,20 +15,27 @@ function MovieDisplay(props) {
             </h3>
             <img alt={movie.title} className="aboutImg" src={movie.image} />
           </div>
-          <div className="previewBox">
-            <img
-              alt={movie.title}
-              className="previewImg"
-              src={movie.movie_banner}
-            />
-          </div>
+          <img
+            alt={movie.title}
+            className="previewImg"
+            src={movie.movie_banner}
+          />
+
         </section>
         <section className="flexDisplay">
           <section>
-            <div>Director - <strong>{movie.director}</strong></div>
-            <div>Producer - <strong>{movie.producer}</strong></div>
-            <div>Release Date - <strong>{movie.release_date}</strong></div>
-            <div>Run Time - <strong>{movie.running_time} min</strong></div>
+            <div>
+              Director - <strong>{movie.director}</strong>
+            </div>
+            <div>
+              Producer - <strong>{movie.producer}</strong>
+            </div>
+            <div>
+              Release Date - <strong>{movie.release_date}</strong>
+            </div>
+            <div>
+              Run Time - <strong>{movie.running_time} min</strong>
+            </div>
           </section>
           <section>
             <hr />
@@ -41,24 +48,3 @@ function MovieDisplay(props) {
 }
 
 export default MovieDisplay;
-
-// Objects Key List
-// [
-//   "id",
-//   "title",
-//   "original_title",
-//   "original_title_romanised",
-//   "image",
-//   "movie_banner",
-//   "description",
-//   "director",
-//   "producer",
-//   "release_date",
-//   "running_time",
-//   "rt_score",
-//   "people",
-//   "species",
-//   "locations",
-//   "vehicles",
-//   "url"
-// ]

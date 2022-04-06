@@ -18,7 +18,6 @@ class Library extends Component {
 
   render() {
     const movies = this.state.data;
-    // console.log(movies);
     return movies.map((movie) => (
       <div>
         <Link
